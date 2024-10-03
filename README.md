@@ -1,4 +1,3 @@
-# network-scanner
 
 # Network Scanner
 
