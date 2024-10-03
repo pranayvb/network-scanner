@@ -4,6 +4,9 @@
 
 A simple yet effective network scanner built using Python for Linux-based operating systems. This tool allows users to quickly scan a target IP range and identify active hosts in the network. It is designed to be used from the command line and can scan entire subnets efficiently.
 
+## How It Works
+This script uses the ARP protocol to identify live hosts. It sends an ARP request to each IP in the target range, and when a device responds, it captures the response to extract its IP and MAC address. This approach works well because ARP is essential in local networks to map IP addresses to MAC addresses, and any active device will respond to ARP requests.
+
 ## Features
 - Scans for live hosts in the specified IP range.
 - Lightweight and easy to use.
